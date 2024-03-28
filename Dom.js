@@ -95,3 +95,7 @@ console.log(add.innerText="hi i am nikeeta kaudare...............");
 let boxx = document.querySelector(".box");
 boxx.appendChild(add);
 add.append("nikeeta kaudare ");
+
+add.prepend("hiiiiiiiiiiiiiiiiiiiiiiii");
+let btn=document.querySelector('button');
+btn.insertAdjacentElement('beforebegin'.btn);
