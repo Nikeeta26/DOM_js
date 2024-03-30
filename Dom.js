@@ -97,5 +97,20 @@ boxx.appendChild(add);
 add.append("nikeeta kaudare ");
 
 add.prepend("hiiiiiiiiiiiiiiiiiiiiiiii");
-let btn=document.querySelector('button');
-btn.insertAdjacentElement('beforebegin'.btn);
+
+let bttn = document.createElement('button');
+bttn.innerHTML = "new button";
+let Para = document.querySelector('p');
+Para.insertAdjacentElement('afterend',bttn);
+bttn.append('click on');
+
+/****************remove************ */
+let body = document.querySelector('body');
+//body.removeChild(bttn);
+
+bttn.remove();
+add.remove();
+
+
+
+
