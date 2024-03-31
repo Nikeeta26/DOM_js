@@ -112,5 +112,57 @@ bttn.remove();
 add.remove();
 
 
+let body = document.querySelector('body');
+let p = document.createElement('p');
+ p.innerHTML="Hey i'm red";
+ body.append(p);
+ p.classList.add('para');
+  let h3 = document.createElement('h3');
+h3.innerHTML="i'm a blue h3!";
+//body.append(h3);
+p.insertAdjacentElement('afterend',h3);
+h3.classList.add('blue');
 
+let div = document.createElement('div');
+div.classList.add('div');
+body.append(div);
+
+let h1 = document.createElement('h1');
+h1.innerHTML="that says i'm in a div";
+
+let p1 = document.createElement('p');
+p1.innerHTML="i'm in <b>hello</b>a div";
+
+div.append(h1);
+div.append(p1);
+
+/**Qs1.Create a new input and button element on the page using JavaScript only.Set the text of button to “Clickme”; */
+let btn = document.createElement("button");
+let input = document.createElement("input");
+btn.innerHTML="click me";
+body.append(btn);
+body.append(input);
+
+/***Qs2.Add following attributes to the element:-Change placeholder value of input to“username”-Change the id of button to“btn */
+let ba = document.querySelector('input');
+ba.setAttribute('placeholder','username');
+
+btn.setAttribute('id','btn');
+
+/***Qs3.Access the btn using the querySelector and button id.Change the button backgroundcolor to blue and text color  to white */
+let bu = document.querySelector('#btn');
+console.log(bu.setAttribute('id','button'));
+
+/***Qs4.Create an h1 elementm on the page and set its text to “DOM Practice” underlined.Change its color topurple. */
+
+let hi = document.createElement('h1');
+hi.innerHTML="<u>Dom practice</u>";
+hi.classList.add('add');
+body.prepend(hi);
+
+
+/***Qs5.Create a p tag on the page and set its text to “ApnaCollege Delta Practice”,where Delta is bold***/
+let pa = document.createElement('p');
+pa.innerHTML="Apna Collage <b>Delta </b> Practice quetions";
+body.append(pa);
 
